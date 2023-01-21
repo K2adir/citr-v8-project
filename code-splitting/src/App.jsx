@@ -23,6 +23,7 @@ const App = () => {
       <BrowserRouter>
         <AdoptedPetContext.Provider value={adoptedPet}>
           <QueryClientProvider client={queryClient}>
+            {/* suspense -----------------------------------*/}
             <Suspense
               fallback={
                 <div className="loading-pane">
